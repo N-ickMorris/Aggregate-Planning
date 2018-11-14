@@ -1,0 +1,36 @@
+reset;
+model aggPlan.mod;
+data aggPlan.dat;
+option solver cplex;
+# option cplex_options 'mipdisplay = 2';
+# option cplex_options 'sensitivity';
+solve;
+
+# Solution Details
+# option omit_zero_rows 0;
+option display_1col 1000;
+# display Xrt, Xot, d , I, S;
+# display  H, F, W, O;
+
+# Sensitivity Analysis
+/*
+# Estimated Coefficients
+display Xrt, Xrt.down, Xrt.current, Xrt.up; 
+display Xot, Xot.down, Xot.current, Xot.up;
+display I, I.down, I.current, I.up; 
+display ProductionBalance.down, ProductionBalance.current, ProductionBalance.up;
+
+# Given Coefficients
+display W, W.down, W.current, W.up; 
+display O, O.down, O.current, O.up;
+display H, H.down, H.current, H.up;
+display F, F.down, F.current, F.up;
+
+# display ProductionBalance.down, ProductionBalance.current, ProductionBalance.up;
+# display ResourceLimit_RT.down, ResourceLimit_RT.current, ResourceLimit_RT.up;
+# display ResourceLimit_OT.down, ResourceLimit_OT.current, ResourceLimit_OT.up;
+
+
+*/
+
+
