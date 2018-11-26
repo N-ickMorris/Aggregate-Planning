@@ -1,13 +1,3 @@
-# Kushal Mehta & Nick Morris
-# ISEE 720 - Production Control - Midterm Exam
-# Aggregate Planning Model
-
-# This is a linear program that determines:
-	# the resource allocation,
-	# the inventory levels,
-	# the production levels,
-# for JK lawn mower company at minimal cost while meeting forecasted sales
-
 # --------------------------------------------------------------------
 # ---- Sets ----------------------------------------------------------
 # --------------------------------------------------------------------
